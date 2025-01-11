@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header.dark-mode, footer.dark-mode, .especialidades-box.dark-mode{
+    background-color: #000;
+    color: #F2F2F2;
+}
+
+body{
+    background-color: #EFEFE6;
+    height: 100vh;
+}
+
+body.dark-mode{
+    background-color: #000;
+    color: #F2F2F2;
+    transition: .3s;
+}
+
+body.dark-mode p, body.dark-mode h2, body.dark-mode h3, body.dark-mode a{
+    color: #F2F2F2;
+}
+
+body.dark-mode section{
+    background-color: #000;
+    color: #F2F2F2;
+}
+
+body.dark-mode header, body.dark-mode footer, body.dark-mode main, body.dark-mode .interface{
+    background-color: #000;
+    color: #F2F2F2;
+    transition: .2s;
+}
+
+body.dark-mode .line-footer p, body.dark-mode .line-footer.borda p a{
+    color: #F2F2F2;
+}
+
+body.dark-mode .menu-mobile{
+    background-color: #000;
+    color: #F2F2F2;
+}
+
+body.dark-mode .menu-mobile nav ul li a{
+    color: #F2F2F2;
+}
+
+body.dark.mode form{
+    background-color: #1e1e1e;
+    color: #F2F2F2;
+    border: 1px solid #444;
+}
+
+body.dark-mode form input, body.dark-mode form textarea {
+    background-color: #333;
+    color: #F2F2F2;
+    border: 1px solid #444;
+}
+
+body.dark-mode form input::placeholder, body.dark-mode form textarea::placeholder {
+    color: #007bff;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.dark-mode-toggle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dark-mode-toggle h1{
+    color: #000;
+    font-size: 18px;
+}
+
+body.dark-mode .dark-mode-toggle h1{
+    color: #F2F2F2;
+}
+
+.trilho{
+    width: 60px;
+    height: 30px;
+    background-color: #4d4d4d;
+    border-radius: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 100px;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .4s;
+}
+
+.trilho.dark{
+    background-color: #222;
+}
+
+.trilho.dark .indicador{
+    left: 30px;
+    background-color: #fff;
+}
+
+.dz-contato button{
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 650;
+    background-color: #007bff;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
+span{
+    color: #007bff;
+}
