@@ -268,6 +268,20 @@ section.projetos .overlay:hover{
     opacity: 1;
 }
 
+section.projetos .dz-contato a{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+section.projetos .dz-contato a:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
 /*CONTATO*/
 section.form{
     padding: 80px 4%;
